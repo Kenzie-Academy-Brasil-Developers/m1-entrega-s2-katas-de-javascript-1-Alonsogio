@@ -1,77 +1,124 @@
-console.log("----funcao 1--")              
-               //Retornar os números de 1 a 20//
+console.log("----funcao 1--")  
+
+      //Retornar os números de 1 a 20//
 
 function oneThroughTwenty() {
-  for (let i = 1; i <= 20; i++) {
-  console.log(i)
-}
-}
+arrayResult1 = []
+
+for(let i = 1; i <= 20; i++){
+     arrayResult1.push(i)
+   
+     }
+      console.log(arrayResult1)
+     }
+  
 oneThroughTwenty()
 
 console.log("----funcao 2--")
 
-                     //Números pares de 1 a 20//
+
+          //Números pares de 1 a 20//
 
 function evensToTwenty() {
-for (let par = 0; par <= 20; par+=2) {
+
+ let arrayResult2=[]
+
+ for(let par = 0; par <= 20; par++){
+   if(par %2==0){
+
+     arrayResult2.push(par)
+   }
+    }
+     console.log(arrayResult2)
+ }
  
- console.log(par);
-} 
-}
 evensToTwenty()
+
 console.log("----funcao 3--")
 
 
 
-                   //Números ímpares de 1 a 20//
+            //Números ímpares de 1 a 20//
 
 function oddsToTwenty() {
-for (let impar = 1; impar <= 20; impar+=2) 
-console.log(impar);
-}
-  oddsToTwenty()
+
+  let arrayResult3=[]
+ 
+ for(let impar = 0; impar <= 20; impar++){
+   if(impar %2==1){
+
+    arrayResult3.push(impar)
+   }
+    }
+     console.log(arrayResult3)
+    }
+
+oddsToTwenty()
+
   console.log("----funcao 4--")
 
 
 
-                   //Múltiplos de 5 até 100//
+            //Múltiplos de 5 até 100//
 
 function multiplesOfFive() {
-  
-for (let mult = 5; mult <= 100; mult+=5)
-console.log(mult);
-}
+
+   let arrayResult4=[]
+
+ for(let mult = 5; mult <= 100; mult++){
+   if(mult %5==0){
+
+     arrayResult4.push(mult)
+   }
+    }
+     console.log(arrayResult4)
+   }
+
   multiplesOfFive()
+
   console.log("----funcao 5--")
 
 
 
-
-                   //Quadrados perfeitos//
+                //Quadrados perfeitos//
 
 function squareNumbers() {
 
-let perfeito = [0 , 1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
-for (let quadrado = 0; quadrado <= 100; quadrado++)
-
-console.log(perfeito[quadrado]);
+  let arrayResult5=[];
   
-}
+
+     for(let quadrado = 0; quadrado <= 100; quadrado++){
+
+   if(Math.sqrt(quadrado) %1===0){
+
+     arrayResult5.push(quadrado)
+   }
+    }
+     console.log(arrayResult5)
+   }
+
   squareNumbers()
+
   console.log("----funcao 6--")
 
 
 
 
-            //Números contando de trás para frente de 20 até 1//
+   //Números contando de trás para frente de 20 até 1//
 
 function countingBackwards() {
-  
-for (let backcont = 20; backcont >= 1; backcont--)
 
-console.log(backcont);
-}
+  arrayResult6 = []
+
+  for(let backcont = 20; backcont >= 1; backcont--){
+       arrayResult6.push(backcont)
+     
+       }
+        console.log(arrayResult6)
+       }
+
   countingBackwards()
+
 
   console.log("----funcao 7--")
 
@@ -79,13 +126,20 @@ console.log(backcont);
         //Números pares reverso//
 
 function evenNumbersBackwards() {
-  
-for (let reversePar = 20; reversePar >= 1; reversePar-=2) {
- 
- console.log(reversePar);
-}
-}
+
+  let arrayResult7=[]
+
+ for(let reversePar = 20; reversePar >= 0; reversePar--){
+   if(reversePar %2==0){
+
+     arrayResult7.push(reversePar)
+   }
+    }
+     console.log(arrayResult7)
+ }
+
   evenNumbersBackwards()
+
   console.log("----funcao 8--")
 
 
@@ -93,37 +147,57 @@ for (let reversePar = 20; reversePar >= 1; reversePar-=2) {
 
 function oddNumbersBackwards() {
 
-let revImp = [,1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
+  let arrayResult8=[]
+ 
+ for(let revImpar = 20; revImpar >= 0; revImpar--){
+   if(revImpar %2==1){
 
-for (let reverseImpar = 20; reverseImpar >= 1; reverseImpar--) 
+    arrayResult8.push(revImpar)
+   }
+    }
+     console.log(arrayResult8)
+    }
 
-console.log(revImp[reverseImpar]);
-}
+oddNumbersBackwards()
 
- oddNumbersBackwards()
+
  console.log("----funcao 9--")
 
 
  //Múltiplos de 5 contando de trás para frente//
 
 function multiplesOfFiveBackwards() {
-  
-for (let reverseMult = 100; reverseMult >= 5; reverseMult-=5)
 
-console.log(reverseMult);
-}
+  let arrayResult9=[]
 
- multiplesOfFiveBackwards();
+ for(let revMult = 100; revMult >= 5; revMult--){
+
+   if(revMult %5==0){
+
+     arrayResult9.push(revMult)
+   }
+    }
+     console.log(arrayResult9)
+   }
+    multiplesOfFiveBackwards();
+
+
  console.log("----funcao 10--")
 
          //Quadrados perfeitos contando de trás para frente//
 
 function squareNumbersBackwards() {
   
-let perfect = [0 , 1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
-for (let reverseQ = 100; reverseQ >= 0; reverseQ--)
-
-console.log(perfect[reverseQ]);
+  let arrayResult10=[];
   
-}
+     for(let reverseQ = 100; reverseQ >= 0; reverseQ--){
+     
+        if(Math.sqrt(reverseQ) %1 === 0){
+    
+      arrayResult10.push(reverseQ)
+   }
+    }
+     console.log(arrayResult10)
+   }
  squareNumbersBackwards();
+
